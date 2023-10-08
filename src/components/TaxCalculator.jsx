@@ -128,6 +128,10 @@ export default function TaxCalculator() {
             >
               <span className="block flex-1 leading-none">
                 {rate.description}
+                <span className="inline-block px-2">
+                  -
+                </span>
+                {rate.rate}%
               </span>
               <span className="block leading-none">
                 ${formatAmount(calculateRateAmount(rate, state.income, rate.selected), 2)}
