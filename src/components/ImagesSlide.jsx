@@ -7,19 +7,34 @@ export default function ImagesSlide() {
   const images = [
     {
       id: 1,
-      src: "/nz-wallpaper.jpg",
-      alt: ""
+      src: "nz-wallpaper.jpg",
+      alt: "milford sound wallpaper"
     },
     {
       id: 2,
-      src: "/nz-wallpaper-1.jpg",
+      src: "nz-wallpaper-1.jpg",
       alt: ""
     },
     {
       id: 3,
-      src: "/nz-wallpaper-2.jpg",
-      alt: ""
-    }
+      src: "nz-wallpaper-2.jpg",
+      alt: "south islands wallpaper"
+    },
+    /*{
+      id: 4,
+      src: "bay-of-islands.jpg",
+      alt: "bay of islands wallpaper"
+    },*/
+    {
+      id: 5,
+      src: "lake-taupo.jpg",
+      alt: "lake taupo wallpaper"
+    },
+    {
+      id: 6,
+      src: "kaikoura.jpg",
+      alt: "kaikoura wallpaper"
+    },
   ]
 
   // component mounted
@@ -44,7 +59,7 @@ export default function ImagesSlide() {
         <div className="absolute top-0 left-0 w-full h-full">
           <img
             key={index}
-            src={image.src}
+            src={`https://ik.imagekit.io/vmg06uqkt/nz-tax-calculator/${image.src}`}
             alt={image.alt}
             className={`${currentImage == index ? '' : 'opacity-0'} w-full h-full object-cover transition duration-500`}
           />
