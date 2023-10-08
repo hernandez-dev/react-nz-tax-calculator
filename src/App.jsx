@@ -1,10 +1,15 @@
 import { useState } from 'react'
 
+// components
+import ImagesSlide from "./components/ImagesSlide.jsx"
+import TaxCalculator from "./components/TaxCalculator.jsx"
+
 function App() {
   return (
-    <h1 className="text-red-200">
-      welcome
-    </h1>
+    <>
+      <ImagesSlide />
+      <TaxCalculator />
+    </>
   )
 }
 
